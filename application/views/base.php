@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<body>
+<header>
+<h1>header</h1>
+</header>
+<section>
+	<?
+	include($content_view);
+	?>
+</section>
+<footer>
+<h1>footer</h1>
+</footer>
+</body>
+</html>

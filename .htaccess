@@ -1,0 +1,14 @@
+Options +FollowSymlinks
+
+Options -Indexes
+
+# Prevent Direct Access to files
+<FilesMatch "(?i)((\.tpl|\.ini|\.log|(?<!robots)\.txt))">
+ Order deny,allow
+ Deny from all
+</FilesMatch>
+
+RewriteEngine On
+
+
+RewriteRule .* index.php [L]
